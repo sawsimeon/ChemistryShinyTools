@@ -1,61 +1,34 @@
-# isc-proposal
+# ChemistryShinyTools: An R Package for Chemistry-Focused Shiny Applications
 
-[![build-status](https://github.com/YOUR-USERNAME/YOUR-REPOSITORY/actions/workflows/publish-proposal.yaml/badge.svg)](https://github.com/YOUR-USERNAME/YOUR-REPOSITORY/actions/workflows/publish-proposal.yaml)
+[![build-status](https://github.com/sawsimeon/ChemistryShinyTools/actions/workflows/publish-proposal.yaml/badge.svg)](https://github.com/sawsimeon/ChemistryShinyTools/actions/workflows/publish-proposal.yaml)
 
-This repository is a boilerplate repository that helps you prepare your proposal for the [R Consortium](https://www.r-consortium.org).
+## Overview
+`ChemistryShinyTools` is an open-source R package designed to simplify the creation of R Shiny applications for chemistry and cheminformatics research. It provides modular, user-friendly tools for visualizing molecular data, integrating machine learning models, and ensuring reproducible workflows, targeting applications in drug discovery, QSAR modeling, and molecular analysis. This package proposal is submitted to the R Consortium’s Infrastructure Steering Committee (ISC) to advance the R ecosystem and support the chemistry research community.
 
-## Background
+Developed by Saw Simeon, a PhD with expertise in R Shiny development and cheminformatics (e.g., publications in *Nature Protocols* 2023 and *Journal of Cheminformatics* 2020), `ChemistryShinyTools` aligns with the [R Consortium’s mission](https://www.r-consortium.org) to:
+- Promote R as the preferred language for statistical computing in chemistry.
+- Support infrastructure by providing reusable Shiny modules and utilities.
+- Increase user adoption through accessible documentation and tutorials.
+- Foster collaboration by hosting the project on GitHub for open contributions.
 
-Set up in 2015, the R Consortium is an organisation set up to help support the R Foundation, the R Community, and R users.
+## Proposal Goals
+This project aims to:
+1. **Simplify Shiny App Development**: Offer pre-built Shiny modules for visualizing chemical data (e.g., molecular structures, SMILES strings, QSAR descriptors), reducing development time for chemists.
+2. **Enhance Reproducibility**: Provide templates and tools for reproducible workflows, integrating machine learning for tasks like virtual screening and activity prediction, inspired by the author’s work on kinase inhibition and drug discovery.
+3. **Promote Collaboration**: Encourage contributions from the R and chemistry communities via GitHub, aligning with the R Consortium’s goal of equitable participation.
+4. **Explore Innovative Features**: Optionally integrate Web3 technologies (e.g., IPFS for decentralized data storage) to enhance transparency in cheminformatics research, reflecting the author’s interest in Web3 since 2017.
 
-> The primary purpose of the R Consortium (collectively, the “Purpose”) is to:
->
->(a) advance the worldwide promotion of and support for the R open source language and environment as the preferred language for statistical computing and graphics (the “Environment”);
->
->(b) establish, maintain, seek support for, and develop infrastructure projects and technical and infrastructure collaboration initiatives related to the Environment, and such other initiatives as may be appropriate to support, enable and promote the Environment;
->
->(c) encourage and increase user adoption, involvement with, and contribution to, the Environment;
->
->(d) facilitate communication and collaboration among users and developers of the Environment, the R Consortium and the R Foundation for Statistical Computing (the “R Foundation”);
->
->(e) support and maintain policies set by the Board; and
->
->(f) undertake such other activities as may from time to time be appropriate to further the purposes and achieve the goals set forth above.
->
->In furtherance of these efforts, the R Consortium shall seek to solicit the participation of all interested parties on a fair, equitable and open basis.
+## Key Features
+- **Interactive Shiny Modules**: Build dashboards for molecular visualization (e.g., logP vs. molecular weight plots, dose-response curves).
+- **Machine Learning Integration**: Simplified wrappers for training and visualizing QSAR models, ensuring reproducibility (e.g., based on *Journal of Cheminformatics* 2020).
+- **Chemical Data Processing**: Tools for handling molecular data (e.g., rcdk for molecular fingerprints), leveraging the author’s experience with HPC clusters.
+- **Reproducible Workflows**: Git integration and documentation templates for transparent research.
+- **Web3 Exploration**: Experimental support for decentralized data storage to log molecular screening results.
 
-_Source: [R Consortium Bylaws, Section 1.4](https://r-consortium.org/rc-docs/R-Consortium-Bylaws-7-9-2024.pdf)_
-
-Delivery of the technical aspects for R Consortium's projects is overseen by the Infrastructure Steering Committee (ISC). The ISC is set up to receive, select, and manage projects that deliver upon the aims of the Consortium. The ISC will have an ongoing call for proposals and will select proposals to move into project stage approximately every six months. Within the process notes, it does say that if a proposal is unlikely to get funded then the proposers will be notified as soon as possible, partially so that re-submission can happen in the event fixable issues.
-
-## Proposals
-
-Here we detail useful guidance notes on making proposals to the ISC but you should always consult the [ISC Grant Program](https://r-consortium.org/all-projects/callforproposals.html) page as there could be updates.
-
-- Try to complete as many of the sections of this boilerplate document as possible. Each section is included either for practical purposes or has been specifically requested by the ISC
-- Add relevant additional sections, like the letter of support from an R Core member if you want a change to R itself
-- Proposals should be 2-5 pages when in PDF form
-- You *can* submit a proposal on your own, but it's really recommended to get engagement from the community (and the ISC) first
-- Proposals should be submitted through the form on the [ISC Grant Program](https://r-consortium.org/all-projects/callforproposals.html) page
-
-## Making your proposal
-
-This is a boilerplate repository that you will need to fork, title appropriately and start filling in.
-
--   Use the "Use this template" button on GitHub
--   Create a new repository with a name to reflect your proposal
--   Create a new Positron/RStudio/IDE project from version control and use the git URL for the repo
--   Write an overview of the proposal instead of this boilerplate for the README
--   Start completing the relevant qmd pages of the proposal
--   Render `isc-proposal.qmd` to build the document locally
--   Regularly commit and push the changes to GitHub
--   Solicit feedback and contributions from others
-
-### Automatically generate your proposal
-
-This repository comes with a GitHub actions setup to automatically render your proposal to HTML and PDF formats.  To take advantage of it, you must publish the proposal to GitHub pages interactively the first time.
-
-From the command line, run `quarto publish gh-pages isc-proposal.qmd`.  After this, the GitHub action should run every time you push a commit to the main branch. Your rendered proposal can then be viewed at https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/
+## Target Audience
+- Chemists and cheminformaticians seeking intuitive tools for data exploration.
+- R users building Shiny apps for chemistry applications.
+- Researchers in drug discovery, molecular modeling, and related fields.
 
 ## License
 
