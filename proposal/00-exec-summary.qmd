@@ -1,6 +1,55 @@
 # Executive Summary
 
-<!--
-This section provides a condensed view of the entire proposal, one page long.
-It should be a comprehensive high-level overview that captures the essence of the proposal, including its goals, methods, expected outcomes, deliverables, and budget.
--->
+**Title**: ChemistryShinyTools: Streamlining R Shiny Applications for Cheminformatics Research
+
+**Proposer**: Saw Simeon, PhD, saw.s@ku.th
+
+`ChemistryShinyTools` is an open-source R package designed to simplify the creation of R Shiny applications for chemistry and cheminformatics research, enabling chemists and data scientists to build interactive tools for molecular visualization, QSAR modeling, and drug discovery. The package provides modular Shiny components, machine learning integration, and reproducible workflow templates. Developed by Saw Simeon, a PhD with expertise in R Shiny development and cheminformatics (e.g., publications in Nature Protocols 2023 and Journal of Cheminformatics 2020), this project leverages a proven track record of delivering user-focused tools to advance the R ecosystem.
+
+## Goals  
+1. **Promote R in Chemistry**: Establish R as a go-to tool for cheminformatics by providing accessible Shiny modules for molecular data analysis.  
+2. **Support Infrastructure**: Develop reusable, modular tools to reduce development time for chemistry-focused Shiny applications.  
+3. **Increase User Adoption**: Lower barriers for chemists through comprehensive documentation, tutorials, and pre-built components.  
+4. **Foster Collaboration**: Engage the R and chemistry communities via GitHub, encouraging contributions and feedback.  
+
+
+## Methods
+The package will be developed using R, leveraging packages like `shiny`, `ggplot2`, `caret`, and `dplyr`, with optional integration of `rcdk` and `fingerprint` for molecular data processing. Key tasks include:  
+- **Development**: Create modular Shiny components (e.g., for visualizing SMILES strings, molecular descriptors) and machine learning wrappers (e.g., for QSAR modeling)  
+- **Documentation**: Produce vignettes and tutorials using Quarto.  
+- **Collaboration**: Host the package on GitHub (github.com/sawsimeon/ChemistryShinyTools), using Git for version control and soliciting community input via issues and pull requests.  
+- **Testing**: Implement unit tests with testthat and ensure CRAN compliance using devtools.  
+- **Outreach**: Share the package on X and R forums (e.g., RStudio Community) to engage users.
+
+## Expected Outcomes  
+- **Increased Adoption**: Chemists and cheminformaticians adopt `ChemistryShinyTools` for rapid development of interactive tools, to enhance R’s presence in chemistry research.  
+- **Improved Productivity**: Reusable modules reduce Shiny app development time.
+- **Community Engagement**: At least 10 active contributors on GitHub within 12 months
+- **Reproducible Research**: Standardized templates and documentation promote reproducible workflows.  
+
+## Deliverables  
+1. **R Package**: `ChemistryShinyTools` on CRAN and GitHub, including:  
+- Shiny modules for molecular visualization (e.g., PCA plots).  
+- Machine learning wrappers for QSAR and virtual screening.  
+- Chemical data processing utilities (e.g., SMILES parsing).
+2. **Documentation**: A vignette and tutorials, rendered to HTML/PDF via GitHub Pages.  
+3. **Example App**: A sample Shiny app demonstrating molecular data visualization.  
+4. **Community Resources**: A `CONTRIBUTING.md` file and X posts to engage the R and chemistry communities.  
+
+## Budget
+Estimated needs include:  
+- **Development Time**: 6 months part-time (20 hours/week) for coding, testing, and documentation.
+- **Software/Tools**: Free/open-source tools (R, Quarto, GitHub, rcdk); optional cloud hosting  
+- **Total Estimate**: ~$1,000–$2,000
+Funding will support development, documentation, and community engagement, ensuring alignment with R Consortium goals.
+
+## Timeline  
+- **Month 1–2**: Develop core Shiny modules and machine learning wrappers; set up GitHub repo.  
+- **Month 3–4**: Create documentation, vignettes, and example app; begin community outreach on X.  
+- **Month 5**: Test package, ensure CRAN compliance, and solicit feedback via GitHub.  
+- **Month 6**: Submit to CRAN and ISC; present at an Uppsala Open Science group.
+
+## Conclusion
+`ChemistryShinyTools` will empower chemists to leverage R’s statistical computing power through intuitive Shiny applications, advancing the R Consortium’s mission to promote R, support infrastructure, and foster collaboration. The proposer’s expertise in R Shiny, cheminformatics, and reproducible research ensures a high-impact project that bridges academia and the R community.
+
+
