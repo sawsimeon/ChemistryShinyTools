@@ -4,21 +4,33 @@ bibliography: references.bib
 
 # The Problem
 
-```{=html}
-<!--
-Outlining the issue / weak point / problem to be solved by this
-proposal. This should be a compelling section that sets the reader up
-for the next section - the proposed solution!
+Cheminformatics research relies heavily on the ability to process, analyze, and visualize complex molecular data, yet creating user-friendly, interactive tools for these tasks remains a significant challenge. Developing R Shiny applications tailored for chemistry and cheminformatics is time-intensive, requiring expertise in both R programming and domain-specific knowledge of molecular data handling. This complexity creates barriers for chemists and data scientists who lack advanced programming skills, limiting their ability to leverage R’s powerful statistical and visualization capabilities for tasks like molecular visualization, quantitative structure-activity relationship (QSAR) modeling, and drug discovery.
 
-It is important to cover:
+### What the Problem Is
+The primary issue is the lack of accessible, modular, and reusable tools for building R Shiny applications specifically designed for cheminformatics. Existing workflows often require developers to create custom Shiny components from scratch, integrating specialized packages like `rcdk` or `fingerprint` for molecular data processing. This process is not only time-consuming but also prone to errors and inconsistencies, as there are no standardized templates or pre-built modules tailored to cheminformatics needs.
 
- - [ ] What the problem is
- - [ ] Who it affects
- - [ ] Why is it a problem
- - [ ] What will solving the problem enable (why should it be solved)
- - [ ] Brief summary of existing work and previous attempts (e.g., relevant R packages)
- - [ ] If proposing changes to R itself: letter of support from R Core member
--->
-```
+### Who It Affects
+This problem affects a wide range of stakeholders in the chemistry and data science communities:
+- **Chemists and Cheminformaticians**: Researchers who need intuitive tools to visualize and analyze molecular data but lack the programming expertise to build custom Shiny applications.
+- **Data Scientists**: R users who work with chemical data but spend excessive time developing bespoke solutions due to the absence of modular, chemistry-focused Shiny components.
+- **Academic and Industry Researchers**: Teams conducting drug discovery or QSAR modeling who require reproducible, interactive tools to streamline their workflows.
+- **R Community**: Developers seeking to expand R’s adoption in cheminformatics but facing high entry barriers due to the complexity of integrating domain-specific tools.
 
-An example in-text citation [@wickham2016].
+### Why It Is a Problem
+The absence of standardized, reusable Shiny components for cheminformatics hinders research efficiency and reproducibility. Chemists without advanced R programming skills are forced to rely on less flexible, proprietary software or manual workflows, which are often costly or lack the statistical rigor of R. For data scientists, the need to repeatedly build custom Shiny applications for molecular visualization or machine learning tasks (e.g., QSAR modeling) results in duplicated effort and inconsistent outputs. This inefficiency slows down research progress, limits collaboration, and restricts R’s adoption in the chemistry domain, despite its potential to be a leading tool for cheminformatics.
+
+### What Solving the Problem Will Enable
+Addressing this problem will:
+- **Empower Chemists**: Provide accessible tools for non-programmers to create interactive Shiny applications for molecular data analysis, visualization, and drug discovery.
+- **Enhance Productivity**: Reduce development time through reusable, modular Shiny components, allowing researchers to focus on scientific discovery rather than coding.
+- **Promote Reproducibility**: Standardize workflows with documented, open-source tools, ensuring consistent and shareable results across research teams.
+- **Expand R’s Reach**: Increase R’s adoption in cheminformatics by making it easier to build chemistry-focused applications, aligning with the R Consortium’s mission to promote R.
+- **Foster Collaboration**: Encourage community contributions through an open-source package, creating a sustainable ecosystem for cheminformatics tools in R.
+
+### Summary of Existing Work and Previous Attempts
+Several R packages support cheminformatics tasks, such as `rcdk` for molecular descriptor calculations, `fingerprint` for molecular similarity analysis, and `ChemmineR` for chemical data processing [@rcdk2020; @fingerprint2018; @chemmineR2021]. However, these packages focus on data processing rather than providing modular components for building interactive Shiny applications. While general-purpose Shiny packages like `shiny` and `shinydashboard` enable web application development, they lack chemistry-specific features, such as SMILES string visualization or QSAR model integration. Existing cheminformatics Shiny applications, such as those described in *Nature Protocols* (2023), are often project-specific and not reusable, requiring developers to start from scratch for new applications [@simeon2023]. No comprehensive, open-source R package currently exists to streamline the creation of chemistry-focused Shiny applications with modular components and extensive documentation.
+
+### Changes to R Itself
+This proposal does not involve changes to R itself, so no letter of support from an R Core member is required.
+
+[@wickham2016; @rcdk2020; @fingerprint2018; @chemmineR2021; @simeon2023]
