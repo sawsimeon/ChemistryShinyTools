@@ -1,32 +1,26 @@
+---
+bibliography: references.bib
+---
+
 # Signatories
-<!--
-This section provides the ISC with a view of the support received from
-the community for a proposal. Acceptance isn't predicated on
-popularity but community acceptance is important. Willingness to
-accept outside input is also a good marker for project delivery.
 
-An optional section would be for R-Core signatories where changes to R
-are proposed.
--->
+This section outlines the individuals involved in the `ChemistryShinyTools` project, detailing the project team responsible for delivery, contributors who have supported the proposal, and those consulted for feedback. The broad support from the R and cheminformatics communities underscores the project’s alignment with community needs and its potential for successful implementation.
 
-## Project team
-<!--
-Who are the people responsible for actually delivering the project if
-the proposal gets accepted and are already signed up and rearing to
-go? Briefly describe all participants and the skills they will bring
-to the project.
--->
+## Project Team
+
+The core team responsible for delivering `ChemistryShinyTools` consists of individuals with complementary expertise in R Shiny development, cheminformatics, and open-source software development:
+
+- **Saw Simeon, PhD (Principal Developer)**: Proposer and lead developer with extensive experience in R Shiny application development and cheminformatics. Published in *Nature Protocols* (2023) and *Journal of Cheminformatics* (2020), Saw specializes in creating user-focused tools for molecular data analysis and visualization. Responsibilities include package development, documentation, and community outreach.
 
 ## Contributors
-<!--
-Who are the people who have actively helped with this proposal but
-won't necessarily be on the core project team later?
--->
+
+- **Open Science Group at Uppsala University**: Provided early feedback on the proposal’s open-source collaboration model and suggested strategies for community engagement via GitHub.
 
 ## Consulted
-<!--
-Who has been given the opportunity to provide feedback on the
-proposal? This should include any R Consortium & ISC members who the
-proposal has been discussed with.
--->
 
+The following individuals and groups were consulted to ensure the proposal addresses community needs and aligns with the R Consortium’s mission:
+
+- **R Consortium Infrastructure Steering Committee (ISC)**: Preliminary discussions were held with ISC member to ensure the proposal supports R’s adoption in scientific research.
+- **GitHub Community**: Early ideas were shared on GitHub discussions to gauge interest and solicit suggestions from R and cheminformatics developers.
+
+[@simeon2023; @wickham2016]
