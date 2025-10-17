@@ -1,50 +1,65 @@
-# The proposal
-<!--
-How are you going to solve the problem? Include the concrete actions you
-will take and an estimated timeline. What are likely failure modes and
-how will you recover from them?
+---
+bibliography: references.bib
+---
 
-This is where the proposal should be outlined.
--->
+# The Proposal
+
+This proposal outlines the development of `ChemistryShinyTools`, an open-source R package designed to streamline the creation of R Shiny applications for cheminformatics research. By providing modular Shiny components, machine learning integration, and comprehensive documentation, the project addresses the challenge of building user-friendly, chemistry-focused interactive tools. Below, we detail the approach, concrete actions, timeline, and potential failure modes, emphasizing benefits to the R and cheminformatics communities.
 
 ## Overview
-<!--
-At a high-level address what your proposal is and how it will address
-the problem identified. Highlight any benefits to the R Community that
-follow from solving the problem. This should be your most compelling
-section.
 
-Include concrete actions you will take and estimated timeline.
--->
+`ChemistryShinyTools` aims to simplify the development of R Shiny applications for cheminformatics by offering reusable modules for molecular visualization, QSAR modeling, and chemical data processing. The package will enable chemists and data scientists to create interactive tools without extensive programming expertise, promoting R as a go-to platform for cheminformatics research. Key benefits to the R community include:
+- **Increased R Adoption**: Lowering barriers for chemists to use R for interactive data analysis.
+- **Enhanced Productivity**: Reusable modules reduce development time for Shiny applications.
+- **Community Collaboration**: An open-source model fosters contributions via GitHub, aligning with the R Consortium’s mission.
+- **Reproducible Research**: Standardized templates and documentation ensure consistent, shareable workflows.
+
+### Concrete Actions and Timeline
+- **Month 1–2**: Develop core Shiny modules (e.g., SMILES visualization, PCA plots) and machine learning wrappers for QSAR modeling. Set up GitHub repository (github.com/sawsimeon/ChemistryShinyTools) with `CONTRIBUTING.md`. Estimated effort: 160 hours.
+- **Month 3–4**: Create documentation using Quarto, including vignettes and tutorials. Build a sample Shiny app demonstrating molecular visualization. Begin outreach on X and RStudio Community. Estimated effort: 160 hours.
+- **Month 5**: Implement unit tests with `testthat`, ensure CRAN compliance using `devtools`, and solicit community feedback via GitHub issues. Estimated effort: 80 hours.
+- **Month 6**: Finalize package, submit to CRAN, and present at Uppsala Open Science group. Estimated effort: 80 hours.
+
+Total development time: 6 months part-time (20 hours/week).
+
+### Potential Failure Modes and Recovery
+- **Failure Mode**: Limited community adoption due to insufficient outreach.
+  - **Recovery**: Intensify promotion on X, RStudio Community, and chemistry forums; collaborate with R Consortium for visibility.
+- **Failure Mode**: Technical challenges in integrating `rcdk` or `fingerprint` for molecular processing.
+  - **Recovery**: Use alternative packages (e.g., `ChemmineR`) or simplify functionality to ensure core deliverables are met.
+- **Failure Mode**: Delays in CRAN submission due to compliance issues.
+  - **Recovery**: Leverage `devtools` for early compliance checks and seek feedback from R community experts.
 
 ## Detail
-<!--
-Go into more detail about the specifics of the project and how it delivers
-against the problem.
-
-Depending on project type the detail section should include:
--->
 
 ### Minimum Viable Product
-
-<!--
-What is the smallest thing you can build that delivers value to your users?
--->
+The minimum viable product (MVP) for `ChemistryShinyTools` will include:
+- A Shiny module for visualizing SMILES strings as 2D molecular structures.
+- A machine learning wrapper for QSAR modeling using `caret`.
+- Basic documentation with one vignette and a tutorial hosted on GitHub Pages.
+- A sample Shiny app demonstrating molecular visualization.
+This MVP delivers immediate value by enabling chemists to create simple interactive tools for molecular analysis, addressing the core problem of time-intensive Shiny development.
 
 ### Architecture
-
-<!--
-What does the high-level architecture look like?
--->
+The package will follow a modular architecture:
+- **Shiny Modules**: Reusable components for molecular visualization (e.g., PCA plots, SMILES rendering) and data input/output.
+- **Machine Learning Layer**: Wrappers for QSAR modeling and virtual screening, built on `caret` and integrated with `rcdk` for molecular descriptors.
+- **Data Processing Utilities**: Functions for parsing SMILES strings and computing molecular properties, leveraging `rcdk` and `fingerprint`.
+- **Documentation Framework**: Quarto-based vignettes and tutorials, rendered to HTML/PDF via GitHub Pages.
+- **Testing and Deployment**: Unit tests with `testthat` and CRAN-compliant structure using `devtools`.
+The package will be hosted on GitHub, with version control via Git and community contributions managed through issues and pull requests.
 
 ### Assumptions
+- Chemists and data scientists need accessible tools to build Shiny applications for cheminformatics.
+- Existing R packages (`rcdk`, `fingerprint`, `caret`) are sufficient for core cheminformatics tasks.
+- The R and chemistry communities will engage with an open-source package via GitHub and X.
+- A 6-month part-time development timeline is feasible with the proposed budget ($1,000–$2,000).
+If these assumptions are invalidated (e.g., low community interest), the project will pivot to focus on niche use cases or alternative outreach channels (e.g., academic conferences).
 
-<!--
-What assumptions are you making that, if proven false, would invalidate the project?
--->
+### External Dependencies
+- **R Packages**: `shiny`, `ggplot2`, `caret`, `dplyr` (core functionality); `rcdk`, `fingerprint`, `ChemmineR` (molecular processing); `testthat`, `devtools` (testing and CRAN compliance); `quarto` (documentation).
+- **Services**: GitHub for hosting and collaboration; GitHub Pages for documentation hosting; optional cloud hosting for the sample app.
+- **Community Platforms**: X and RStudio Community for outreach and feedback.
+These dependencies are stable, open-source, and widely used, minimizing risks to project delivery.
 
-### External dependencies
-
-<!--
-What external dependencies does the project have (e.g. libraries, services, other projects, etc.)?
--->
+[@simeon2023; @wickham2016; @rcdk2020; @fingerprint2018; @chemmineR2021]
