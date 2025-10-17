@@ -1,11 +1,10 @@
 ---
-title: "Proposal Title"
+title: "ChemistryShinyTools: Streamlining R Shiny Applications for Cheminformatics Research"
 author:
-  - name: Annie Easley
-    orcid: 5555-5555-5555-5555
+  - name: Saw Simeon
+    orcid: 0000-0002-9045-6970
     affiliations:
-      - "Lewis Research Center, National Aeronautics and Space Administration"
-
+      - "Department of Chemistry, Kasetsart University"
 date: today
 date-format: iso
 format:
@@ -18,10 +17,9 @@ format:
 bibliography: references.bib
 ---
 
-# 🚧🚧🚧 UNDER CONSTRUCTION 🚧🚧🚧
+# ChemistryShinyTools Proposal
 
-This repository is currently being revisited.
-An update will be released in early September 2025.
+This document outlines the proposal for `ChemistryShinyTools`, an open-source R package designed to simplify the development of R Shiny applications for cheminformatics research. The project aims to empower chemists and data scientists to create interactive tools for molecular visualization, QSAR modeling, and drug discovery, promoting R’s adoption in the chemistry community.
 
 {{< include proposal/00-exec-summary.qmd >}}
 
@@ -32,8 +30,14 @@ An update will be released in early September 2025.
 {{< include proposal/03-proposal.qmd >}}
 
 {{< include proposal/04-timeline.qmd >}}
+::: warning
+The timeline section is under construction and will be updated soon.
+:::
 
 {{< include proposal/05-success.qmd >}}
+::: warning
+The success criteria section is under construction and will be updated soon.
+:::
 
 ::: refs
 :::
