@@ -1,57 +1,97 @@
-# Project plan
+---
+bibliography: references.bib
+---
 
-## Start-up phase
-<!--
-Covering the planning phase, this section should provide a relatively
-detailed plan of how work will start on the project. This section is
-important because projects need to get up and running quickly.
+# Project Plan
 
+This document outlines the project plan for `ChemistryShinyTools`, an open-source R package to streamline the development of R Shiny applications for cheminformatics research. The plan covers the start-up phase, technical delivery, dissemination strategies, and budget allocation, ensuring alignment with the R Consortium’s goals of promoting R, supporting infrastructure, and fostering collaboration. The timeline spans 6 months, with clear milestones and deliverables to ensure timely completion.
 
- - [ ] Setting up collaboration platform inc. code for contributors etc.
- - [ ] Licence decisions
- - [ ] Reporting framework
--->
+## Start-up Phase
 
+The start-up phase focuses on establishing the foundation for `ChemistryShinyTools` to ensure smooth development and community engagement.
 
-## Technical delivery
-<!--
-Covering the actual delivery of the project this section should
-provide at least a high-level description of the implementation.
+- **Setting Up Collaboration Platform**:
+  - Create a GitHub repository (`github.com/sawsimeon/ChemistryShinyTools`) for version control and community contributions.
+  - Develop a `CONTRIBUTING.md` file outlining guidelines for contributors, including coding standards and pull request processes.
+  - Set up GitHub Issues for feature requests and bug tracking, and a discussion board for community feedback.
+  - **Timeline**: Month 1 (Weeks 1–2).
+- **License Decisions**:
+  - Adopt the MIT License to ensure the package is open-source, accessible, and compatible with CRAN submission requirements.
+  - Document the license in the repository’s `LICENSE` file and package `DESCRIPTION`.
+  - **Timeline**: Month 1 (Week 1).
+- **Reporting Framework**:
+  - Establish a quarterly reporting schedule to update the R Consortium on progress via email and blog posts.
+  - Create a project wiki on GitHub to document milestones, progress, and community engagement efforts.
+  - Schedule presentations at R Consortium ISC meetings and the Uppsala Open Science group to share updates.
+  - **Timeline**: Month 1 (Weeks 1–4).
 
-Including target dates is really important as you need to be committed
-and the ISC need to have a means of tracking delivery
--->
+## Technical Delivery
 
-## Other aspects
+The technical delivery phase involves developing, testing, and deploying `ChemistryShinyTools` with clear milestones and target dates to ensure accountability.
 
-<!--
-How will you ensure that your work is available to the widest number
-of people? Please specify the open-source or creative commons license(s)
-you will use, how you will host your code so that others can contribute,
-and how you will publicize your work. We encourage you to plan content
-to be shared quarterly on the R Consortium blog.
+- **Month 1–2: Core Development (Target: December 18, 2025)**  
+  - Develop core Shiny modules for molecular visualization (e.g., SMILES string rendering, PCA plots) using `shiny` and `ggplot2`.
+  - Create machine learning wrappers for QSAR modeling using `caret`, integrated with `rcdk` for molecular descriptors.
+  - Implement data processing utilities for SMILES parsing and molecular property calculations using `rcdk` and `fingerprint`.
+  - Set up package structure with `devtools` for CRAN compliance.
+  - **Deliverable**: Initial codebase with functional Shiny modules and QSAR wrappers in the GitHub repository.
 
- - [ ] Announcement post
- - [ ] Delivery blog post
- - [ ] Social media
- - [ ] UseR!
- - [ ] ISC meetings
--->
+- **Month 3–4: Documentation and Example App (Target: February 18, 2026)**  
+  - Write comprehensive documentation using Quarto, including a vignette and tutorials for molecular visualization and QSAR modeling.
+  - Develop a sample Shiny app demonstrating molecular data visualization and basic QSAR functionality.
+  - Begin unit testing with `testthat` to ensure module reliability.
+  - **Deliverable**: Vignette, tutorials, and sample app hosted on GitHub Pages; initial test suite completed.
 
-## Budget & funding plan
+- **Month 5: Testing and Community Feedback (Target: March 18, 2026)**  
+  - Finalize unit tests and ensure CRAN compliance using `devtools` and `R CMD check`.
+  - Solicit community feedback via GitHub Issues and X posts, incorporating suggestions into the package.
+  - Refine documentation based on user feedback.
+  - **Deliverable**: CRAN-ready package with tested modules and updated documentation.
 
-<!--
-Outline the milestones for development and how much funding will be
-required for each stage (as payments will be tied to project milestone
-completion). Each milestone should specify the work to be done and the
-expected outcomes, providing enough detail for the ISC to understand
-the scope of the project work and assess the likelihood of success.
+- **Month 6: Deployment and Outreach (Target: April 18, 2026)**  
+  - Submit `ChemistryShinyTools` to CRAN and the R Consortium ISC for review.
+  - Publish a final vignette and tutorials on GitHub Pages.
+  - Present the project at the Uppsala Open Science group and share a completion blog post on the R Consortium blog.
+  - **Deliverable**: Published package on CRAN, final documentation, and presentation slides.
 
-We expect that most of the budget will be allocated
-for labor costs. We do not cover indirect costs. The ISC grants cannot
-cover such things as travel, lodging, food, journal publication fees,
-or personal hardware. Cloud services may be covered if they are specific
-to the project and the project period. The ISC reserves the right to vet
-how funds are used for each project separately. If in doubt, please reach
-out to us.
--->
+## Other Aspects
+
+To maximize accessibility and impact, `ChemistryShinyTools` will be developed and shared with the following strategies:
+
+- **Open-Source License**: The package will use the MIT License, ensuring broad accessibility and compatibility with CRAN and community contributions.
+- **Code Hosting**: The GitHub repository (`github.com/sawsimeon/ChemistryShinyTools`) will serve as the central hub for code, documentation, and collaboration, with Git for version control and Issues for feedback.
+- **Publicity**:
+  - **Announcement Post**: Publish an announcement on the R Consortium blog and X in Month 2 to introduce the project and invite contributors.
+  - **Delivery Blog Post**: Share a completion post on the R Consortium blog in Month 6, detailing outcomes and usage instructions.
+  - **Social Media**: Regular updates on X (@ChemistryShinyTools) and RStudio Community forums to engage chemists and R users (Months 2–6).
+  - **UseR!**: Submit an abstract to UseR! 2026 to present `ChemistryShinyTools` and demonstrate its applications (Month 5).
+  - **ISC Meetings**: Provide quarterly updates at R Consortium ISC meetings to ensure alignment with community goals (Months 3 and 6).
+- **Quarterly Content**: Share progress updates on the R Consortium blog every 3 months, covering development milestones, community feedback, and use cases.
+
+## Budget & Funding Plan
+
+The estimated budget for `ChemistryShinyTools` is $1,000–$2,000, primarily allocated to labor costs for development, testing, and documentation. The budget is tied to the following milestones:
+
+- **Milestone 1: Core Development (Months 1–2, $800)**  
+  - **Work**: Develop Shiny modules, QSAR wrappers, and data processing utilities; set up GitHub repository and license.
+  - **Outcome**: Functional codebase with initial modules and repository infrastructure.
+  - **Funding**: Covers 160 hours of part-time development (20 hours/week).
+
+- **Milestone 2: Documentation and Example App (Months 3–4, $800)**  
+  - **Work**: Create Quarto-based documentation, tutorials, and a sample Shiny app; begin testing and outreach.
+  - **Outcome**: Vignette, tutorials, and app hosted on GitHub Pages; initial test suite.
+  - **Funding**: Covers 160 hours of part-time work for documentation and app development.
+
+- **Milestone 3: Testing, Deployment, and Outreach (Months 5–6, $400)**  
+  - **Work**: Finalize testing, ensure CRAN compliance, incorporate community feedback, submit to CRAN, and present at Uppsala Open Science group.
+  - **Outcome**: CRAN-published package, finalized documentation, and community engagement.
+  - **Funding**: Covers 160 hours of part-time work for testing, refinement, and outreach.
+
+- **Additional Costs**:
+  - **Software/Tools**: Free/open-source tools (R, Quarto, GitHub, `rcdk`, `fingerprint`) will be used, minimizing costs.
+  - **Cloud Hosting**: Optional cloud hosting for the sample app (e.g., ShinyApps.io, ~$100–$200, if needed).
+  - **Total Estimate**: $1,000–$2,000, excluding indirect costs (e.g., travel, hardware), which are not covered per ISC guidelines.
+
+The budget ensures efficient use of funds, focusing on labor to deliver a high-quality, community-driven package. The ISC may vet fund usage, and any questions will be addressed promptly.
+
+[@simeon2023; @wickham2016; @rcdk2020; @fingerprint2018; @chemmineR2021]
