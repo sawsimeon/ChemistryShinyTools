@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Saw Simeon">
-<meta name="dcterms.date" content="2025-10-18">
+<meta name="dcterms.date" content="2025-10-19">
 
 <title>ChemistryShinyTools: Streamlining R Shiny Applications for Cheminformatics Research</title>
 <style>
@@ -2219,7 +2219,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">2025-10-18</p>
+      <p class="date">2025-10-19</p>
     </div>
   </div>
   
@@ -2553,29 +2553,42 @@ vertical-align: -.125em;
 </section>
 <section id="success" class="level1">
 <h1>Success</h1>
-<!--
-Projects should have a definition of done that is measurable, and a
-thorough understanding going in of what the risks are to delivery
--->
+<p>This section defines the success criteria for <code>ChemistryShinyTools</code>, an open-source R package designed to streamline the development of R Shiny applications for cheminformatics research. It outlines measurable outcomes, methods to track progress, and potential avenues for future development, ensuring alignment with the R Consortium’s goals of promoting R, supporting infrastructure, and fostering collaboration. The plan also addresses risks to delivery and mitigation strategies.</p>
 <section id="definition-of-done" class="level2">
-<h2 class="anchored" data-anchor-id="definition-of-done">Definition of done</h2>
-<!--
-What does success look like?
--->
+<h2 class="anchored" data-anchor-id="definition-of-done">Definition of Done</h2>
+<p>Success for <code>ChemistryShinyTools</code> is achieved when the following deliverables are completed within the 6-month timeline (November 2025–April 2026): - <strong>Published R Package</strong>: <code>ChemistryShinyTools</code> is available on CRAN and GitHub (<code>github.com/sawsimeon/ChemistryShinyTools</code>), including: - Modular Shiny components for molecular visualization (e.g., SMILES rendering, PCA plots). - Machine learning wrappers for QSAR modeling and virtual screening using <code>caret</code> and <code>rcdk</code>. - Chemical data processing utilities for SMILES parsing and molecular descriptors. - <strong>Comprehensive Documentation</strong>: A Quarto-based vignette, tutorials, and a sample Shiny app demonstrating molecular visualization, hosted on GitHub Pages. - <strong>Community Engagement</strong>: At least 10 active contributors on GitHub (e.g., via issues or pull requests) and engagement through X posts and RStudio Community forums. - <strong>CRAN Compliance</strong>: The package passes <code>R CMD check</code> and adheres to CRAN policies, ensuring accessibility to the R community. - <strong>Outreach</strong>: A presentation at the Uppsala Open Science group and a completion blog post on the R Consortium blog, promoting the package to chemists and R users.</p>
 </section>
 <section id="measuring-success" class="level2">
-<h2 class="anchored" data-anchor-id="measuring-success">Measuring success</h2>
-<!--
-How will we know when success is achieved, what markers can we use
-along the way
--->
+<h2 class="anchored" data-anchor-id="measuring-success">Measuring Success</h2>
+<p>Progress and success will be tracked using the following measurable markers:</p>
+<ul>
+<li><strong>Month 2 (December 18, 2025)</strong>:
+<ul>
+<li>GitHub repository is live with initial codebase, including core Shiny modules and QSAR wrappers.</li>
+<li><code>CONTRIBUTING.md</code> and MIT License are published, with at least 2–3 initial community issues or pull requests.</li>
+<li><strong>Marker</strong>: Repository has &gt;50 stars and &gt;5 forks on GitHub; initial X post reaches &gt;100 engagements.</li>
+</ul></li>
+<li><strong>Month 4 (February 18, 2026)</strong>:
+<ul>
+<li>Documentation (vignette, tutorials) and sample Shiny app are hosted on GitHub Pages.</li>
+<li>Unit tests cover &gt;80% of the codebase (measured via <code>testthat</code> and code coverage tools).</li>
+<li><strong>Marker</strong>: At least 5 community feedback submissions via GitHub Issues; sample app is functional and shared on X with &gt;200 engagements.</li>
+</ul></li>
+<li><strong>Month 6 (April 18, 2026)</strong>:
+<ul>
+<li>Package is submitted to CRAN and passes all checks.</li>
+<li>At least 10 active contributors (e.g., code contributions, bug reports, or feature suggestions) on GitHub.</li>
+<li>Presentation at Uppsala Open Science group is completed, and R Consortium blog post is published.</li>
+<li><strong>Marker</strong>: Package is live on CRAN; &gt;500 downloads within the first month post-release; &gt;20 community interactions (issues/pull requests) on GitHub.</li>
+</ul></li>
+</ul>
+<p><strong>Risks to Delivery and Mitigation</strong>: - <strong>Risk</strong>: Low community adoption due to insufficient outreach. - <strong>Mitigation</strong>: Amplify promotion through X, RStudio Community, and chemistry forums; collaborate with R Consortium for visibility; offer webinars or tutorials to demonstrate value. - <strong>Risk</strong>: Technical issues with <code>rcdk</code> or <code>fingerprint</code> integration, delaying molecular processing functionality. - <strong>Mitigation</strong>: Use alternative packages like <code>ChemmineR</code> or simplify features to focus on core Shiny modules; consult community experts via GitHub. - <strong>Risk</strong>: CRAN submission delays due to compliance issues. - <strong>Mitigation</strong>: Conduct early <code>R CMD check</code> tests using <code>devtools</code> and seek pre-submission feedback from R community members. - <strong>Risk</strong>: Timeline slippage due to resource constraints. - <strong>Mitigation</strong>: Prioritize MVP deliverables (core modules, basic documentation) and adjust scope if needed, ensuring timely CRAN submission.</p>
 </section>
 <section id="future-work" class="level2">
-<h2 class="anchored" data-anchor-id="future-work">Future work</h2>
-<!--
-How could this be extended / developed in the future by yourself
-and/or the community in general?
--->
+<h2 class="anchored" data-anchor-id="future-work">Future Work</h2>
+<p><code>ChemistryShinyTools</code> is designed to be extensible, with opportunities for future development by the project team and the broader community: - <strong>Enhanced Functionality</strong>: Add support for advanced cheminformatics tasks, such as 3D molecular visualization, docking simulations, or integration with AI-driven drug discovery tools. - <strong>Broader Integration</strong>: Incorporate additional R packages (e.g., <code>Bio3D</code> for protein analysis) or external APIs (e.g., PubChem) to expand data processing capabilities. - <strong>Community-Driven Modules</strong>: Encourage contributors to develop new Shiny modules for specialized use cases, such as toxicology prediction or cheminformatics education tools, via GitHub pull requests. - <strong>Educational Outreach</strong>: Create online courses or workshops (e.g., via RStudio Education or UseR!) to train chemists in using <code>ChemistryShinyTools</code> for research and teaching. - <strong>Sustainability</strong>: Establish a maintainer team from active GitHub contributors to ensure long-term package maintenance and updates, potentially supported by R Consortium grants or academic partnerships. - <strong>Cross-Disciplinary Applications</strong>: Extend the package for bioinformatics or materials science by adapting modules for related data types, broadening R’s impact in scientific research.</p>
+<p>The open-source nature of the package, hosted on GitHub with an MIT License, ensures that the R and cheminformatics communities can continue to build on <code>ChemistryShinyTools</code>, fostering collaboration and innovation.</p>
+<p><span class="citation" data-cites="simeon2023 wickham2016 rcdk2020 fingerprint2018 chemmineR2021">(<a href="#ref-simeon2023" role="doc-biblioref"><strong>simeon2023?</strong></a>; <a href="#ref-wickham2016" role="doc-biblioref">Wickham 2016</a>; <a href="#ref-rcdk2020" role="doc-biblioref"><strong>rcdk2020?</strong></a>; <a href="#ref-fingerprint2018" role="doc-biblioref"><strong>fingerprint2018?</strong></a>; <a href="#ref-chemmineR2021" role="doc-biblioref"><strong>chemmineR2021?</strong></a>)</span></p>
 <div class="warning">
 <p>The success criteria section is under construction and will be updated soon.</p>
 </div>
