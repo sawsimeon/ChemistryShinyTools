@@ -1,22 +1,61 @@
+---
+bibliography: references.bib
+---
+
 # Success
-<!--
-Projects should have a definition of done that is measurable, and a
-thorough understanding going in of what the risks are to delivery
--->
 
-## Definition of done
-<!--
-What does success look like?
--->
+This section defines the success criteria for `ChemistryShinyTools`, an open-source R package designed to streamline the development of R Shiny applications for cheminformatics research. It outlines measurable outcomes, methods to track progress, and potential avenues for future development, ensuring alignment with the R Consortium’s goals of promoting R, supporting infrastructure, and fostering collaboration. The plan also addresses risks to delivery and mitigation strategies.
 
-## Measuring success
-<!--
-How will we know when success is achieved, what markers can we use
-along the way
--->
+## Definition of Done
 
-## Future work
-<!--
-How could this be extended / developed in the future by yourself
-and/or the community in general?
--->
+Success for `ChemistryShinyTools` is achieved when the following deliverables are completed within the 6-month timeline (November 2025–April 2026):
+- **Published R Package**: `ChemistryShinyTools` is available on CRAN and GitHub (`github.com/sawsimeon/ChemistryShinyTools`), including:
+  - Modular Shiny components for molecular visualization (e.g., SMILES rendering, PCA plots).
+  - Machine learning wrappers for QSAR modeling and virtual screening using `caret` and `rcdk`.
+  - Chemical data processing utilities for SMILES parsing and molecular descriptors.
+- **Comprehensive Documentation**: A Quarto-based vignette, tutorials, and a sample Shiny app demonstrating molecular visualization, hosted on GitHub Pages.
+- **Community Engagement**: At least 10 active contributors on GitHub (e.g., via issues or pull requests) and engagement through X posts and RStudio Community forums.
+- **CRAN Compliance**: The package passes `R CMD check` and adheres to CRAN policies, ensuring accessibility to the R community.
+- **Outreach**: A presentation at the Uppsala Open Science group and a completion blog post on the R Consortium blog, promoting the package to chemists and R users.
+
+## Measuring Success
+
+Progress and success will be tracked using the following measurable markers:
+
+- **Month 2 (December 18, 2025)**:
+  - GitHub repository is live with initial codebase, including core Shiny modules and QSAR wrappers.
+  - `CONTRIBUTING.md` and MIT License are published, with at least 2–3 initial community issues or pull requests.
+  - **Marker**: Repository has >50 stars and >5 forks on GitHub; initial X post reaches >100 engagements.
+- **Month 4 (February 18, 2026)**:
+  - Documentation (vignette, tutorials) and sample Shiny app are hosted on GitHub Pages.
+  - Unit tests cover >80% of the codebase (measured via `testthat` and code coverage tools).
+  - **Marker**: At least 5 community feedback submissions via GitHub Issues; sample app is functional and shared on X with >200 engagements.
+- **Month 6 (April 18, 2026)**:
+  - Package is submitted to CRAN and passes all checks.
+  - At least 10 active contributors (e.g., code contributions, bug reports, or feature suggestions) on GitHub.
+  - Presentation at Uppsala Open Science group is completed, and R Consortium blog post is published.
+  - **Marker**: Package is live on CRAN; >500 downloads within the first month post-release; >20 community interactions (issues/pull requests) on GitHub.
+
+**Risks to Delivery and Mitigation**:
+- **Risk**: Low community adoption due to insufficient outreach.
+  - **Mitigation**: Amplify promotion through X, RStudio Community, and chemistry forums; collaborate with R Consortium for visibility; offer webinars or tutorials to demonstrate value.
+- **Risk**: Technical issues with `rcdk` or `fingerprint` integration, delaying molecular processing functionality.
+  - **Mitigation**: Use alternative packages like `ChemmineR` or simplify features to focus on core Shiny modules; consult community experts via GitHub.
+- **Risk**: CRAN submission delays due to compliance issues.
+  - **Mitigation**: Conduct early `R CMD check` tests using `devtools` and seek pre-submission feedback from R community members.
+- **Risk**: Timeline slippage due to resource constraints.
+  - **Mitigation**: Prioritize MVP deliverables (core modules, basic documentation) and adjust scope if needed, ensuring timely CRAN submission.
+
+## Future Work
+
+`ChemistryShinyTools` is designed to be extensible, with opportunities for future development by the project team and the broader community:
+- **Enhanced Functionality**: Add support for advanced cheminformatics tasks, such as 3D molecular visualization, docking simulations, or integration with AI-driven drug discovery tools.
+- **Broader Integration**: Incorporate additional R packages (e.g., `Bio3D` for protein analysis) or external APIs (e.g., PubChem) to expand data processing capabilities.
+- **Community-Driven Modules**: Encourage contributors to develop new Shiny modules for specialized use cases, such as toxicology prediction or cheminformatics education tools, via GitHub pull requests.
+- **Educational Outreach**: Create online courses or workshops (e.g., via RStudio Education or UseR!) to train chemists in using `ChemistryShinyTools` for research and teaching.
+- **Sustainability**: Establish a maintainer team from active GitHub contributors to ensure long-term package maintenance and updates, potentially supported by R Consortium grants or academic partnerships.
+- **Cross-Disciplinary Applications**: Extend the package for bioinformatics or materials science by adapting modules for related data types, broadening R’s impact in scientific research.
+
+The open-source nature of the package, hosted on GitHub with an MIT License, ensures that the R and cheminformatics communities can continue to build on `ChemistryShinyTools`, fostering collaboration and innovation.
+
+[@simeon2023; @wickham2016; @rcdk2020; @fingerprint2018; @chemmineR2021]
