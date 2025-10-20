@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Saw Simeon">
-<meta name="dcterms.date" content="2025-10-19">
+<meta name="dcterms.date" content="2025-10-20">
 
 <title>ChemistryShinyTools: Streamlining R Shiny Applications for Cheminformatics Research</title>
 <style>
@@ -2219,7 +2219,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">2025-10-19</p>
+      <p class="date">2025-10-20</p>
     </div>
   </div>
   
@@ -2338,7 +2338,7 @@ vertical-align: -.125em;
 <li><strong>R Consortium Infrastructure Steering Committee (ISC)</strong>: Preliminary discussions were held with ISC member to ensure the proposal supports R’s adoption in scientific research.</li>
 <li><strong>GitHub Community</strong>: Early ideas were shared on GitHub discussions to gauge interest and solicit suggestions from R and cheminformatics developers.</li>
 </ul>
-<p><span class="citation" data-cites="simeon2023 wickham2016">(<a href="#ref-simeon2023" role="doc-biblioref"><strong>simeon2023?</strong></a>; <a href="#ref-wickham2016" role="doc-biblioref">Wickham 2016</a>)</span></p>
+<p><span class="citation" data-cites="simeon2023 wickham2016">(<a href="#ref-simeon2023" role="doc-biblioref">Tran-Nguyen et al. 2023</a>; <a href="#ref-wickham2016" role="doc-biblioref">Wickham 2016</a>)</span></p>
 </section>
 </section>
 <section id="the-problem" class="level1">
@@ -2362,12 +2362,12 @@ vertical-align: -.125em;
 </section>
 <section id="summary-of-existing-work-and-previous-attempts" class="level3">
 <h3 class="anchored" data-anchor-id="summary-of-existing-work-and-previous-attempts">Summary of Existing Work and Previous Attempts</h3>
-<p>Several R packages support cheminformatics tasks, such as <code>rcdk</code> for molecular descriptor calculations, <code>fingerprint</code> for molecular similarity analysis, and <code>ChemmineR</code> for chemical data processing <span class="citation" data-cites="rcdk2020 fingerprint2018 chemmineR2021">(<a href="#ref-rcdk2020" role="doc-biblioref"><strong>rcdk2020?</strong></a>; <a href="#ref-fingerprint2018" role="doc-biblioref"><strong>fingerprint2018?</strong></a>; <a href="#ref-chemmineR2021" role="doc-biblioref"><strong>chemmineR2021?</strong></a>)</span>. However, these packages focus on data processing rather than providing modular components for building interactive Shiny applications. While general-purpose Shiny packages like <code>shiny</code> and <code>shinydashboard</code> enable web application development, they lack chemistry-specific features, such as SMILES string visualization or QSAR model integration. Existing cheminformatics Shiny applications, such as those described in <em>Nature Protocols</em> (2023), are often project-specific and not reusable, requiring developers to start from scratch for new applications <span class="citation" data-cites="simeon2023">(<a href="#ref-simeon2023" role="doc-biblioref"><strong>simeon2023?</strong></a>)</span>. No comprehensive, open-source R package currently exists to streamline the creation of chemistry-focused Shiny applications with modular components and extensive documentation.</p>
+<p>Several R packages support cheminformatics tasks, such as <code>rcdk</code> for molecular descriptor calculations, <code>fingerprint</code> for molecular similarity analysis, and <code>ChemmineR</code> for chemical data processing <span class="citation" data-cites="rcdk2020 fingerprint2018 chemmineR2021">(<a href="#ref-rcdk2020" role="doc-biblioref"><strong>rcdk2020?</strong></a>; <a href="#ref-fingerprint2018" role="doc-biblioref"><strong>fingerprint2018?</strong></a>; <a href="#ref-chemmineR2021" role="doc-biblioref"><strong>chemmineR2021?</strong></a>)</span>. However, these packages focus on data processing rather than providing modular components for building interactive Shiny applications. While general-purpose Shiny packages like <code>shiny</code> and <code>shinydashboard</code> enable web application development, they lack chemistry-specific features, such as SMILES string visualization or QSAR model integration. Existing cheminformatics Shiny applications, such as those described in <em>Nature Protocols</em> (2023), are often project-specific and not reusable, requiring developers to start from scratch for new applications <span class="citation" data-cites="simeon2023">(<a href="#ref-simeon2023" role="doc-biblioref">Tran-Nguyen et al. 2023</a>)</span>. No comprehensive, open-source R package currently exists to streamline the creation of chemistry-focused Shiny applications with modular components and extensive documentation.</p>
 </section>
 <section id="changes-to-r-itself" class="level3">
 <h3 class="anchored" data-anchor-id="changes-to-r-itself">Changes to R Itself</h3>
 <p>This proposal does not involve changes to R itself, so no letter of support from an R Core member is required.</p>
-<p><span class="citation" data-cites="wickham2016 rcdk2020 fingerprint2018 chemmineR2021 simeon2023">(<a href="#ref-wickham2016" role="doc-biblioref">Wickham 2016</a>; <a href="#ref-rcdk2020" role="doc-biblioref"><strong>rcdk2020?</strong></a>; <a href="#ref-fingerprint2018" role="doc-biblioref"><strong>fingerprint2018?</strong></a>; <a href="#ref-chemmineR2021" role="doc-biblioref"><strong>chemmineR2021?</strong></a>; <a href="#ref-simeon2023" role="doc-biblioref"><strong>simeon2023?</strong></a>)</span></p>
+<p><span class="citation" data-cites="wickham2016 rcdk2020 fingerprint2018 chemmineR2021 simeon2023">(<a href="#ref-wickham2016" role="doc-biblioref">Wickham 2016</a>; <a href="#ref-rcdk2020" role="doc-biblioref"><strong>rcdk2020?</strong></a>; <a href="#ref-fingerprint2018" role="doc-biblioref"><strong>fingerprint2018?</strong></a>; <a href="#ref-chemmineR2021" role="doc-biblioref"><strong>chemmineR2021?</strong></a>; <a href="#ref-simeon2023" role="doc-biblioref">Tran-Nguyen et al. 2023</a>)</span></p>
 </section>
 </section>
 <section id="the-proposal" class="level1">
@@ -2430,7 +2430,7 @@ vertical-align: -.125em;
 <li><strong>Services</strong>: GitHub for hosting and collaboration; GitHub Pages for documentation hosting; optional cloud hosting for the sample app.</li>
 <li><strong>Community Platforms</strong>: X and RStudio Community for outreach and feedback. These dependencies are stable, open-source, and widely used, minimizing risks to project delivery.</li>
 </ul>
-<p><span class="citation" data-cites="simeon2023 wickham2016 rcdk2020 fingerprint2018 chemmineR2021">(<a href="#ref-simeon2023" role="doc-biblioref"><strong>simeon2023?</strong></a>; <a href="#ref-wickham2016" role="doc-biblioref">Wickham 2016</a>; <a href="#ref-rcdk2020" role="doc-biblioref"><strong>rcdk2020?</strong></a>; <a href="#ref-fingerprint2018" role="doc-biblioref"><strong>fingerprint2018?</strong></a>; <a href="#ref-chemmineR2021" role="doc-biblioref"><strong>chemmineR2021?</strong></a>)</span></p>
+<p><span class="citation" data-cites="simeon2023 wickham2016 rcdk2020 fingerprint2018 chemmineR2021">(<a href="#ref-simeon2023" role="doc-biblioref">Tran-Nguyen et al. 2023</a>; <a href="#ref-wickham2016" role="doc-biblioref">Wickham 2016</a>; <a href="#ref-rcdk2020" role="doc-biblioref"><strong>rcdk2020?</strong></a>; <a href="#ref-fingerprint2018" role="doc-biblioref"><strong>fingerprint2018?</strong></a>; <a href="#ref-chemmineR2021" role="doc-biblioref"><strong>chemmineR2021?</strong></a>)</span></p>
 </section>
 </section>
 </section>
@@ -2545,7 +2545,7 @@ vertical-align: -.125em;
 </ul></li>
 </ul>
 <p>The budget ensures efficient use of funds, focusing on labor to deliver a high-quality, community-driven package. The ISC may vet fund usage, and any questions will be addressed promptly.</p>
-<p><span class="citation" data-cites="simeon2023 wickham2016 rcdk2020 fingerprint2018 chemmineR2021">(<a href="#ref-simeon2023" role="doc-biblioref"><strong>simeon2023?</strong></a>; <a href="#ref-wickham2016" role="doc-biblioref">Wickham 2016</a>; <a href="#ref-rcdk2020" role="doc-biblioref"><strong>rcdk2020?</strong></a>; <a href="#ref-fingerprint2018" role="doc-biblioref"><strong>fingerprint2018?</strong></a>; <a href="#ref-chemmineR2021" role="doc-biblioref"><strong>chemmineR2021?</strong></a>)</span></p>
+<p><span class="citation" data-cites="simeon2023 wickham2016 rcdk2020 fingerprint2018 chemmineR2021">(<a href="#ref-simeon2023" role="doc-biblioref">Tran-Nguyen et al. 2023</a>; <a href="#ref-wickham2016" role="doc-biblioref">Wickham 2016</a>; <a href="#ref-rcdk2020" role="doc-biblioref"><strong>rcdk2020?</strong></a>; <a href="#ref-fingerprint2018" role="doc-biblioref"><strong>fingerprint2018?</strong></a>; <a href="#ref-chemmineR2021" role="doc-biblioref"><strong>chemmineR2021?</strong></a>)</span></p>
 <div class="warning">
 <p>The timeline section is under construction and will be updated soon.</p>
 </div>
@@ -2588,7 +2588,7 @@ vertical-align: -.125em;
 <h2 class="anchored" data-anchor-id="future-work">Future Work</h2>
 <p><code>ChemistryShinyTools</code> is designed to be extensible, with opportunities for future development by the project team and the broader community: - <strong>Enhanced Functionality</strong>: Add support for advanced cheminformatics tasks, such as 3D molecular visualization, docking simulations, or integration with AI-driven drug discovery tools. - <strong>Broader Integration</strong>: Incorporate additional R packages (e.g., <code>Bio3D</code> for protein analysis) or external APIs (e.g., PubChem) to expand data processing capabilities. - <strong>Community-Driven Modules</strong>: Encourage contributors to develop new Shiny modules for specialized use cases, such as toxicology prediction or cheminformatics education tools, via GitHub pull requests. - <strong>Educational Outreach</strong>: Create online courses or workshops (e.g., via RStudio Education or UseR!) to train chemists in using <code>ChemistryShinyTools</code> for research and teaching. - <strong>Sustainability</strong>: Establish a maintainer team from active GitHub contributors to ensure long-term package maintenance and updates, potentially supported by R Consortium grants or academic partnerships. - <strong>Cross-Disciplinary Applications</strong>: Extend the package for bioinformatics or materials science by adapting modules for related data types, broadening R’s impact in scientific research.</p>
 <p>The open-source nature of the package, hosted on GitHub with an MIT License, ensures that the R and cheminformatics communities can continue to build on <code>ChemistryShinyTools</code>, fostering collaboration and innovation.</p>
-<p><span class="citation" data-cites="simeon2023 wickham2016 rcdk2020 fingerprint2018 chemmineR2021">(<a href="#ref-simeon2023" role="doc-biblioref"><strong>simeon2023?</strong></a>; <a href="#ref-wickham2016" role="doc-biblioref">Wickham 2016</a>; <a href="#ref-rcdk2020" role="doc-biblioref"><strong>rcdk2020?</strong></a>; <a href="#ref-fingerprint2018" role="doc-biblioref"><strong>fingerprint2018?</strong></a>; <a href="#ref-chemmineR2021" role="doc-biblioref"><strong>chemmineR2021?</strong></a>)</span></p>
+<p><span class="citation" data-cites="simeon2023 wickham2016 rcdk2020 fingerprint2018 chemmineR2021">(<a href="#ref-simeon2023" role="doc-biblioref">Tran-Nguyen et al. 2023</a>; <a href="#ref-wickham2016" role="doc-biblioref">Wickham 2016</a>; <a href="#ref-rcdk2020" role="doc-biblioref"><strong>rcdk2020?</strong></a>; <a href="#ref-fingerprint2018" role="doc-biblioref"><strong>fingerprint2018?</strong></a>; <a href="#ref-chemmineR2021" role="doc-biblioref"><strong>chemmineR2021?</strong></a>)</span></p>
 <div class="warning">
 <p>The success criteria section is under construction and will be updated soon.</p>
 </div>
@@ -2600,6 +2600,9 @@ vertical-align: -.125em;
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-simeon2023" class="csl-entry" role="listitem">
+Tran-Nguyen, Viet-Khoa, Muhammad Junaid, Saw Simeon, and Pedro J Ballester. 2023. <span>“A Practical Guide to Machine-Learning Scoring for Structure-Based Virtual Screening.”</span> <em>Nature Protocols</em> 18 (11): 3460–3511.
+</div>
 <div id="ref-wickham2016" class="csl-entry" role="listitem">
 Wickham, Hadley. 2016. <em>Ggplot2: Elegant Graphics for Data Analysis</em>. Springer-Verlag New York. <a href="https://ggplot2.tidyverse.org">https://ggplot2.tidyverse.org</a>.
 </div>
